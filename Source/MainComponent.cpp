@@ -22,6 +22,10 @@ MainComponent::MainComponent()
     durLabel.attachToComponent(&durSlider, true);
     
     freqSlider.setValue(500.0);
+    
+    freqSlider.setSkewFactorFromMidPoint(500);
+    durSlider.setSkewFactorFromMidPoint(0.002);
+    
     setSize (600, 400);
 }
 
